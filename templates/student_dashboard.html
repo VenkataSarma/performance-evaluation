@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="student-info">
+            <img src="{{ url_for('static', filename=student_details['Image Path']) }}" alt="Student Image">
+            <p><strong>Name:</strong> {{ student_details['Name'] }}</p>
+            <p><strong>Class:</strong> {{ student_details['Class'] }}</p>
+            <p><strong>Section:</strong> {{ student_details['Section'] }}</p>
+            <p><strong>Roll No:</strong> {{ student_details['Roll No'] }}</p>
+            <p><strong>Parent Contact:</strong> {{ student_details['Parent Contact'] }}</p>
+        </div>
+        <div class="student-feedback">
+            <h2>STUDENT FEEDBACK</h2>
+            <hr class="styled-hr">
+            <p><strong>Studies:</strong> {{ student_details['Studies'] }}</p>
+            <p><strong>Sports:</strong> {{ student_details['Sports'] }}</p>
+            <p><strong>Art:</strong> {{ student_details['Art'] }}</p>
+            <p><strong>Crafts:</strong> {{ student_details['Crafts'] }}</p>
+            <p><strong>Reasoning:</strong> {{ student_details['Reasoning'] }}</p>
+            <p><strong>Extra Curricular Activities:</strong> {{ student_details['Extra Curricular activities'] }}</p>
+            <hr class="styled-hr">
+            <h2>IMPORTANT NOTICE</h2>
+            <hr class="styled-hr">
+            <p><strong>NOTE:</strong> The above mentioned performances feedback is given by the faculty.The main aim of this is to just improve the skills of students. </p>
+        </div>
+    </div>
+    <div class="exams">
+    <div class="exam-links">
+        <h2>Exams</h2>
+        <a href="{{ url_for('student_marks', Username=student_details['Username'], exam='FA1') }}" class="exam-fa1">FA1</a>
+        <a href="{{ url_for('student_marks', Username=student_details['Username'], exam='FA2') }}" class="exam-fa2">FA2</a>
+        <a href="{{ url_for('student_marks', Username=student_details['Username'], exam='SA1') }}" class="exam-sa1">SA1</a>
+        <a href="{{ url_for('student_marks', Username=student_details['Username'], exam='FA3') }}" class="exam-fa3">FA3</a>
+        <a href="{{ url_for('student_marks', Username=student_details['Username'], exam='FA4') }}" class="exam-fa4">FA4</a>
+        <a href="{{ url_for('student_marks', Username=student_details['Username'], exam='SA2') }}" class="exam-sa2">SA2</a>
+    </div>
+    </div>
+</body>
+</html>

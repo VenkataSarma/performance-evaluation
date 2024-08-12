@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="teacher-info1">
+    <div class="teacher-info">
+        
+        <img src="{{ url_for('static', filename=teacher_details['Image Path']) }}" alt="Teacher Image"/>
+        <p><strong>Name:</strong> {{ teacher_details['Name'] }}</p>
+        <p><strong>Subject:</strong> {{ teacher_details['Subject'] }}</p>
+        <p><strong>Qualification:</strong> {{ teacher_details['Qualification'] }}</p>
+        <p><strong>Contact:</strong> {{ teacher_details['Contact'] }}</p>
+    </div>
+    </div>
+</body>
+</html>

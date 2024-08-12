@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body class="index-page">
+    <div class="background-container">
+        <div class="buttons-container">
+            <div class="image">
+            <a href="{{ url_for('student_login') }}">
+                <img src="{{ url_for('static', filename='student.jpg') }}" alt="Student" class="button-img">
+                <p>Student</p>
+            </a>
+            </div>
+            <div class="image">
+            <a href="{{ url_for('teacher_login') }}">
+                <img src="{{ url_for('static', filename='teacher.jpg') }}" alt="Teacher" class="button-img">
+                <p>Teacher</p>
+            </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

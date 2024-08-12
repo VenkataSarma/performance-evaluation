@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MALLA REDDY HIGH SCHOOL</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="top-header">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='abc.jpg') }}" alt="School Logo">
+        </div>
+        <div class="title">
+            <h1>MALLA REDDY HIGH SCHOOL</h1>
+        </div>
+        <nav class="top-nav">
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Academics</a></li>
+                <li><a href="#">Exams</a></li>
+            </ul>
+        </nav>
+        <a href="{{ url_for('home') }}" class="login-button">Login</a>
+    </header>
+    <div class="marquee">
+        <marquee>Admissions are open!!</marquee>
+    </div>
+    <section class="scrolling-photos">
+        <div class="scrolling-images">
+            <img src="{{ url_for('static', filename='mrec.jpg') }}" alt="MREC">
+            <img src="{{ url_for('static', filename='prayer.jpg') }}" alt="Prayer">
+            <img src="{{ url_for('static', filename='ground.jpg') }}" alt="Ground">
+            <img src="{{ url_for('static', filename='mrec.jpg') }}" alt="MREC">
+            <img src="{{ url_for('static', filename='prayer.jpg') }}" alt="Prayer">
+            <img src="{{ url_for('static', filename='ground.jpg') }}" alt="Ground">
+        </div>
+    </section>
+    <section class="main-content">
+        <div class="left-division">
+            <img src="{{ url_for('static', filename='mr.jpg') }}" alt="Founder Chairman, MREC">
+            <p>SRI CH. MALLA REDDY<br>
+            Founder Chairman, MREC<br>
+            Sri. Ch. Malla Reddy is an educationist and a politician of highest repute. He is currently serving as the Member of Legislative Assembly for Medchal, Govt. of Telangana State.</p>
+        </div>
+        <div class="right-division">
+            <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/b7b0a75f-eec7-43ca-af1d-92251ebe2b5e"></iframe>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <img src="{{ url_for('static', filename='abc.jpg') }}" alt="School Logo">
+                <p>MREC HOME | Contact Us<br>
+                Malla Reddy Engineering College (A) Maisammaguda(H), Gundlapochampally (V), Medchal (M). Medchal - Malkajgiri District Telangana - 500100.<br>
+                info@mrec.ac.in</p>
+            </div>
+            <div class="footer-right">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
